@@ -1,0 +1,15 @@
+/* bugSolution.css */
+
+/* Instead of relying on pseudo-elements within the media query, use a separate class and apply styles directly to an element */
+.media-element {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .media-element {
+    display: block;
+    content: "This text is now visible"; /* Or any other content */
+    /* Add other styles here for this specific media query */
+  }
+}
+/* Or use a different approach to style elements for various screen sizes */
